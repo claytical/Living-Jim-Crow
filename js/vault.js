@@ -28,24 +28,44 @@ function toggleVault() {
 
 function unlock(item) {
 	console.log("Unlocking " + item);
+	var html = "<div class='item'><h3>";
 	switch(item) {
 		case "nih1":
-			console.log("NIH Article");
+			html +="NIH Article"
+			html += "</h3><p>";
+			html +="Article discussing health disparities amongst different races</p>";
+			html +="<a href='#'>View</a>";
 			break;
 		case "nejm1":
-			console.log("NEJM Article");
+			html +="NEJM Article"
+			html += "</h3><p>";
+			html +="Article discussing health disparities amongst different races</p>";
+			html +="<a href='#'>View</a>";
 			break;
 		case "newyorker1":
-			console.log("https://www.newyorker.com/magazine/2018/02/05/what-does-it-mean-to-die");
+			html +="New Yorker Article"
+			html += "</h3><p>";
+			html +="Article discussing health disparities amongst different races</p>";
+			html +="<a href='https://www.newyorker.com/magazine/2018/02/05/what-does-it-mean-to-die'>View</a>";
 			break;
 		case "michigantoday":
-			console.log("http://michigantoday.umich.edu/a7776/");
+			html +="Michigan Today Article"
+			html += "</h3><p>";
+			html +="Article discussing health disparities amongst different races</p>";
+			html +="<a href='http://michigantoday.umich.edu/a7776/'>View</a>";
 			break;
 		case "finished_injury":
-			console.log("Finished Injury Story");
+			html +="Injury Story Complete"
+			html += "</h3><p>";
+			html +="You played through the story <em>An Injury</em>";
 			break;
 		default:
 			console.log(item + " not found");
 
+	}
+	html += "</p></div>";
+	$(".vault-content").append(html);
+	if(!vaultOpen) {
+		openVault();
 	}
 }
