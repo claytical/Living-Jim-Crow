@@ -37,11 +37,12 @@ label {
     color: #444;
     color: rgba(0,0,0,.8);
     border: 1px solid #999;
-    border: transparent;
-    background-color: #E6E6E6;
+    background-color: transparent;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 5px;
     cursor: pointer;
+    display: block;
+    margin-top: 1em;
 }
 
 .squiffy-link.disabled {

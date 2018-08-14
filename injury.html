@@ -24,12 +24,15 @@
             <link rel="stylesheet" href="css/layouts/marketing.css">
         <!--<![endif]-->
         <script src="js/jquery.min.js"></script>
+        <script src="js/vault.js"></script>
         <script src="js/story.js" charset="UTF-8"></script>
 
 </head>
 <body>
         <script>
             jQuery(function($){
+                $('#vault_button').click(toggleVault);
+
                 $('#squiffy').squiffy();
                 var restart = function () {
                     $('#squiffy').squiffy('restart');
@@ -44,23 +47,41 @@
 
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">Living Jim Crow</a>
+        <a class="pure-menu-heading" href="index.html">Living Jim Crow</a>
 
         <ul class="pure-menu-list">
             <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="restart" tabindex="0">Restart</a></li>
             <li class="pure-menu-item"><a href="#" class="pure-menu-link">Green Book</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Vault</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="vault_button">Vault</a></li>
         </ul>
     </div>
 </div>
 
 <div class="story-wrapper">
     <div class="content">
-        <h2 class="content-head is-center">An Injury...</h2>
-            <div id="squiffy">
+        <div class="" id="story-container">
+            <div class="pure-u-3-3" id="story">
+                <h2 class="content-head is-center">An Injury...</h2>
+                    <div id="squiffy">
+                    </div>
+            </div>
+            <div class="pure-u-1-3" id="vault" style="display:none;">
+                <h2 class="content-head is-center">The Vault</h2>
+                    <dl>
+                        <dt>NIH Article</dt>
+                        <dd>Disparities in Health Care</dd>
+                        <dt>NIH Article</dt>
+                        <dd>Disparities in Health Care</dd>
+                        <dt>NIH Article</dt>
+                        <dd>Disparities in Health Care</dd>
+                        <dt>NIH Article</dt>
+                        <dd>Disparities in Health Care</dd>
+
+                    </dl>
             </div>
         </div>
     </div>
+</div>
 <!--
     <div class="ribbon l-box-lrg pure-g">
         <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
