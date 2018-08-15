@@ -35,7 +35,7 @@ function unlock(item) {
 			html +="Racial/Ethnic Differences in Physician Distrust in the United States"
 			html += "<span class='new-label'>Unlocked!</span></h3><p>";
 			html +="Publication from a study funded by the National Institutes of Health</p>";
-			html +="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1913079/' data-featherlight='iframe' data-featherlight-iframe-allowfullscreen>View</a>";
+			html +="<a class='pure-button' href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1913079/' data-featherlight='iframe' data-featherlight-iframe-allowfullscreen>View</a>";
 			break;
 		case "nejm1":
 /*			html +="Racial Differences in the Use of Cardiac Catheterization after Acute Myocardial Infarction"
@@ -80,6 +80,6 @@ function unlock(item) {
 	if(!vaultOpen) {
 		openVault();
 	}
-	new_item.children("a").featherlight();
+	$(".vault-content a").featherlight();
 	$(".item .new-label").fadeIn(500).delay(3000).fadeOut(3000);
 }
