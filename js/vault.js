@@ -40,7 +40,7 @@ function unlock(item) {
 		case "nejm1":
 			html +="Racial Differences in the Use of Cardiac Catheterization after Acute Myocardial Infarction"
 			html += "<span class='new-label'>Unlocked!</span></h3><p>";
-			html +="Severeal studies have reported that black patients are less likely than white patients to undergo cardiac catheterization after acute myocardial Infarction</p>";
+			html +="Several studies have reported that black patients are less likely than white patients to undergo cardiac catheterization after acute myocardial Infarction</p>";
 			html +="<a href='http://www.nejm.org/doi/full/10.1056/NEJM200105103441906' data-featherlight='iframe' data-featherlight-iframe-allowfullscreen>View</a>";
 			break;
 		case "newyorker1":
