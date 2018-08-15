@@ -28,6 +28,7 @@ function toggleVault() {
 
 function unlock(item) {
 	console.log("Unlocking " + item);
+	$('.item .new-item').removeClass('.new-item');
 	var html = "<div class='item'><h3>";
 	switch(item) {
 		case "nih1":
@@ -68,6 +69,5 @@ function unlock(item) {
 	if(!vaultOpen) {
 		openVault();
 	}
-	new_item.children(".item .new-label").hide(0).show(5000).delay(5000).fadeOut('slow');
-
+	$(".item .new-label").fadeIn(500).delay(3000).fadeOut(3000);
 }
