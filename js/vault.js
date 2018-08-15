@@ -68,6 +68,6 @@ function unlock(item) {
 	if(!vaultOpen) {
 		openVault();
 	}
-	new_item.children(".new-label").delay(500).removeClass("new-label");
+	new_item.children(".item .new-label").hide(0).show(5000).delay(5000).fadeOut('slow');
 
 }

@@ -39,6 +39,7 @@ label {
     background: #fefefe;
     padding: 1em;
     border-radius: 1em;
+    margin-bottom: 1em;
 }
 
 .vault-content .item .new-label {
