@@ -38,10 +38,16 @@ function unlock(item) {
 			html +="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1913079/' data-featherlight='iframe' data-featherlight-iframe-allowfullscreen>View</a>";
 			break;
 		case "nejm1":
-			html +="Racial Differences in the Use of Cardiac Catheterization after Acute Myocardial Infarction"
+/*			html +="Racial Differences in the Use of Cardiac Catheterization after Acute Myocardial Infarction"
 			html += "<span class='new-label'>Unlocked!</span></h3><p>";
 			html +="Several studies have reported that black patients are less likely than white patients to undergo cardiac catheterization after acute myocardial Infarction</p>";
 			html +="<a href='http://www.nejm.org/doi/full/10.1056/NEJM200105103441906' data-featherlight='iframe' data-featherlight-iframe-allowfullscreen>View</a>";
+*/
+			html +="Coquetting with Beckly"
+			html += "<span class='new-label'>Unlocked!</span></h3><p>";
+			html +="Nimick Again Tempting the First Baseman to Abandon Players</p>";
+			html +="<a href='vault/articles/union.pdf'>View</a>";
+
 			break;
 		case "newyorker1":
 			html +="What Does It Mean To Die?"
