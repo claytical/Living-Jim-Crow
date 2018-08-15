@@ -1,11 +1,11 @@
 // Created with Squiffy 5.1.2
 // https://github.com/textadventures/squiffy
+var squiffy = {};
 
 (function(){
 /* jshint quotmark: single */
 /* jshint evil: true */
 
-var squiffy = {};
 
 (function () {
     'use strict';

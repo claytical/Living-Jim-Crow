@@ -32,31 +32,31 @@ function unlock(item) {
 	switch(item) {
 		case "nih1":
 			html +="NIH Article"
-			html += "</h3><p>";
+			html += "<span class='new-label'>New!</span></h3><p>";
 			html +="Article discussing health disparities amongst different races</p>";
 			html +="<a href='#'>View</a>";
 			break;
 		case "nejm1":
 			html +="NEJM Article"
-			html += "</h3><p>";
+			html += "<span class='new-label'>New!</span></h3><p>";
 			html +="Article discussing health disparities amongst different races</p>";
 			html +="<a href='#'>View</a>";
 			break;
 		case "newyorker1":
 			html +="New Yorker Article"
-			html += "</h3><p>";
+			html += "<span class='new-label'>New!</span></h3><p>";
 			html +="Article discussing health disparities amongst different races</p>";
 			html +="<a href='https://www.newyorker.com/magazine/2018/02/05/what-does-it-mean-to-die'>View</a>";
 			break;
 		case "michigantoday":
 			html +="Michigan Today Article"
-			html += "</h3><p>";
+			html += "<span class='new-label'>New!</span></h3><p>";
 			html +="Article discussing health disparities amongst different races</p>";
 			html +="<a href='http://michigantoday.umich.edu/a7776/'>View</a>";
 			break;
 		case "finished_injury":
 			html +="Injury Story Complete"
-			html += "</h3><p>";
+			html += "<span class='new-label'>New!</span></h3><p>";
 			html +="You played through the story <em>An Injury</em>";
 			break;
 		default:
@@ -64,8 +64,10 @@ function unlock(item) {
 
 	}
 	html += "</p></div>";
-	$(".vault-content").append(html);
+	var new_item = $(".vault-content").prepend(html);
 	if(!vaultOpen) {
 		openVault();
 	}
+	new_item.children(".new-label").delay(500).removeClass("new-label");
+
 }

@@ -34,6 +34,22 @@ label {
 .vault-content {
     padding: 1em;
 }
+
+.vault-content .item {
+    background: #fefefe;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.vault-content .item .new-label {
+    background: lightseagreen;
+    border-radius: .5em;
+    font-size: 11px;
+    color: white;
+    padding: .5em;
+    float: right;
+}
+
 #story {
     padding-right: 1em;
 }

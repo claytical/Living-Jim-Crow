@@ -24,9 +24,10 @@
 </head>
 <body>
         <script>
+            var squif;
             jQuery(function($){
                 $('#vault_button').click(toggleVault);
-                $('#squiffy').squiffy();
+                squif = $('#squiffy').squiffy();
                 var restart = function () {
                     $('#squiffy').squiffy('restart');
                 };
